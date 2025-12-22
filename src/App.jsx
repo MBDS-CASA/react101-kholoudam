@@ -36,9 +36,11 @@ function MainContent() {
 }
 
 function Footer() {
+  const annee = new Date().getFullYear();
+
   return (
     <footer className="footer">
-      © Tous les droits sont réservés – ALLAM Kholoud
+      © {annee} - ALLAM Kholoud, Tous droits réservés.
     </footer>
   );
 }
