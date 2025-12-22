@@ -16,15 +16,20 @@ function Header() {
   );
 }
 
-function Content() {
+function MainContent() {
+  const now = new Date();
+
+  const jour = now.getDate();
+  const mois = now.getMonth() + 1;
+  const annee = now.getFullYear();
+  const heure = now.getHours();
+  const minute = now.getMinutes();
+  const seconde = now.getSeconds();
+
   return (
     <main>
       <p>
-        <strong>
-          <em>
-            Ici, nous afficherons des informations intéressantes
-          </em>
-        </strong>
+        Bonjour, on est le {jour}, {mois}, {annee} et il est {heure}:{minute}:{seconde}
       </p>
     </main>
   );
@@ -42,7 +47,7 @@ function App() {
   return (
     <>
       <Header />
-      <Content />
+      <MainContent />
       <Footer />
     </>
   );
