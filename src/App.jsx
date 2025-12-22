@@ -3,32 +3,49 @@ import Emsi from './assets/logo_emsi.png'
 import UCA from './assets/LOGO_UCA.jpg'
 import './App.css'
 
-function Header()
-{
+function Header() {
   return (
-    <>
+    <header>
       <div>
         <img src={Emsi} className="logo Emsi" alt="Emsi" />
         <img src={UCA} className="logo UCA" alt="UCA" />
       </div>
       <h1>Introduction à React</h1>
-      <h4>A la découverte des premières notion de React</h4></>
+      <h4>A la découverte des premières notions de React</h4>
+    </header>
   );
 }
-function App() {
-  const [count, setCount] = useState(0)
 
+function Content() {
   return (
-    <>
-    <Header />
-      <div>
-        <img src={Emsi} className="logo Emsi" alt="Emsi" />
-        <img src={UCA} className="logo UCA" alt="UCA" />
-      </div>
-      <h1>Introduction à React</h1>
-      <h4>A la découverte des premières notion de React</h4>
-    </>
-  )
+    <main>
+      <p>
+        <strong>
+          <em>
+            Ici, nous afficherons des informations intéressantes
+          </em>
+        </strong>
+      </p>
+    </main>
+  );
 }
 
-export default App
+function Footer() {
+  return (
+    <footer className="footer">
+      © Tous les droits sont réservés – ALLAM Kholoud
+    </footer>
+  );
+}
+
+function App() {
+  return (
+    <>
+      <Header />
+      <Content />
+      <Footer />
+    </>
+  );
+}
+
+export default App;
