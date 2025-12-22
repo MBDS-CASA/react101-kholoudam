@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/logo_emsi.png'
+import Emsi from './assets/logo_emsi.png'
+import UCA from './assets/LOGO_UCA.jpg'
 import './App.css'
 
 function App() {
@@ -8,22 +9,11 @@ function App() {
   return (
     <>
       <div>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="Emsi" />
-        </a>
+          <img src={Emsi} className="logo Emsi" alt="Emsi" />
+          <img src={UCA} className="logo UCA" alt="UCA" />
       </div>
-      <h1>MBDS + EMSI</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h1>Introduction à React</h1>
+      <h4>A la découverte des premières notion de React</h4>
     </>
   )
 }
