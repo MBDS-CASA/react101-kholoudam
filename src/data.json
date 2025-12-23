@@ -1,20 +1,18 @@
-[
-  {
-    "id": 1,
-    "titre": "React",
-    "note": 18,
-    "commentaire": "Très bonne maîtrise"
-  },
-  {
-    "id": 2,
-    "titre": "Java",
-    "note": 15,
-    "commentaire": "Bon niveau"
-  },
-  {
-    "id": 3,
-    "titre": "Web",
-    "note": 17,
-    "commentaire": "Très bien"
-  }
-]
+{
+  "etudiants": [
+    { "id": 1, "nom": "Ahmed" },
+    { "id": 2, "nom": "Sara" },
+    { "id": 3, "nom": "Youssef" }
+  ],
+  "matieres": [
+    { "id": 1, "libelle": "React" },
+    { "id": 2, "libelle": "Java" },
+    { "id": 3, "libelle": "Web" }
+  ],
+  "notes": [
+    { "id": 1, "etudiantId": 1, "matiereId": 1, "note": 18 },
+    { "id": 2, "etudiantId": 1, "matiereId": 2, "note": 15 },
+    { "id": 3, "etudiantId": 2, "matiereId": 1, "note": 17 },
+    { "id": 4, "etudiantId": 3, "matiereId": 3, "note": 16 }
+  ]
+}

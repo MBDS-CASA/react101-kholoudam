@@ -1,11 +1,15 @@
-function Menu() {
-  const items = ["Notes", "Etudiants", "Matières", "A propos"];
+function Menu({ activeMenu, setActiveMenu }) {
+  const menus = ["Notes", "Etudiants", "Matieres", "A propos"];
 
   return (
     <nav className="menu">
-      {items.map((item, index) => (
-        <button key={index} onClick={() => alert(item)}>
-          {item}
+      {menus.map((menu) => (
+        <button
+          key={menu}
+          className={activeMenu === menu ? "active" : ""}
+          onClick={() => setActiveMenu(menu)}
+        >
+          {menu}
         </button>
       ))}
     </nav>

@@ -1,16 +1,17 @@
-import Header from "./components/Header";
+import { useState } from "react";
 import Menu from "./components/Menu";
-import MainContent from "./components/MainContent";
+import Content from "./components/Content";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Note from "./components/Note";
 
 function App() {
+  const [activeMenu, setActiveMenu] = useState("Notes");
+
   return (
     <>
-      <Menu />
+      <Menu activeMenu={activeMenu} setActiveMenu={setActiveMenu} />
       <Header />
-      <MainContent />
-      <Note />
+      <Content activeMenu={activeMenu} />
       <Footer />
     </>
   );
