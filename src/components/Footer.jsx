@@ -3,7 +3,7 @@ function Footer() {
 
   return (
     <footer className="footer">
-      © {year} - ALLAM Kholoud, Tous droits réservés.
+      © {year} - Kholoud Allam, Tous droits réservés.
     </footer>
   );
 }
