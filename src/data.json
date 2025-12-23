@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "matiere": "Mathématiques",
+    "note": 16,
+    "etudiant": "Ali"
+  },
+  {
+    "id": 2,
+    "matiere": "Informatique",
+    "note": 18,
+    "etudiant": "Sara"
+  },
+  {
+    "id": 3,
+    "matiere": "Physique",
+    "note": 14,
+    "etudiant": "Youssef"
+  }
+]
