@@ -1,17 +1,15 @@
-import Emsi from '../assets/logo_emsi.png'
-import UCA from '../assets/LOGO_UCA.jpg'
+import Emsi from '../assets/logo_emsi.png';
 
 function Header() {
   return (
-    <header>
+    <header className="header">
+      <img src={Emsi} alt="Logo Formation" className="logo" />
       <div>
-        <img src={Emsi} className="logo Emsi" alt="Emsi" />
-        <img src={UCA} className="logo UCA" alt="UCA" />
+        <h1>Introduction à React</h1>
+        <h2>A la découverte des premières notions de React</h2>
       </div>
-      <h1>Introduction à React</h1>
-      <h4>A la découverte des premières notions de React</h4>
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;

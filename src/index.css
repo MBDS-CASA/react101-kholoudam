@@ -1,110 +1,90 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap");
-
-/* ===== RESET & BASE ===== */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-}
-
-html {
-  font-family: "Quicksand", sans-serif;
-  line-height: 1.5;
-
-  color: #ebe7ef;
-  background: radial-gradient(#280a48, #20043d);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-
-  min-height: 100%;
+  font-family: Arial, sans-serif;
 }
 
 body {
-  margin: 0;
-  padding-bottom: 70px; /* espace pour le footer fixé */
+  background: #f4f6f8;
+  padding-bottom: 60px;
 }
 
-/* ===== HEADER ===== */
-header {
-  text-align: center;
-  margin: 3rem 0;
-}
-
-header div {
+/* MENU */
+.menu {
   display: flex;
-  justify-content: center;
-  gap: 2rem;
+  gap: 10px;
+  padding: 15px;
+  background: #0d6efd;
 }
 
-header img {
-  height: 5rem;
-  width: 10rem;
-  object-fit: cover;
+.menu button {
+  background: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-header h1 {
-  margin: 0;
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 5rem;
-
-  background: linear-gradient(40deg, #ea00ff, #03d5ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
+.menu button:hover {
+  background: #e0e0e0;
 }
 
-header h4 {
-  margin: 0.5rem 0 0;
-  font-size: 1.25rem;
-  color: #8964b0;
-  font-family: "Roboto Condensed", sans-serif;
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* ===== MAIN CONTENT ===== */
-main {
-  width: 90%;
-  max-width: 50rem;
-  margin: auto;
+.logo {
+  width: 70px;
+}
+
+/* MAIN */
+.main {
+  padding: 30px;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* NOTE */
+.note {
+  margin: 20px auto;
+  padding: 20px;
+  width: 300px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   text-align: center;
 }
 
-main p {
-  font-size: 1.1rem;
-  background-color: #140524;
-  padding: 1.5rem;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-}
-
-/* ===== FOOTER FIXÉ ===== */
+/* FOOTER */
 .footer {
   position: fixed;
   bottom: 0;
-  left: 0;
   width: 100%;
-
+  padding: 12px;
+  background: #0d6efd;
+  color: white;
   text-align: center;
-  padding: 15px 0;
-
-  background-color: #140524;
-  color: #ebe7ef;
-  font-size: 14px;
-
-  border-top: 1px solid #2f1d43;
-  z-index: 1000;
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 3rem;
-  }
+.note button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: none;
+  background: #0d6efd;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
-  header img {
-    width: 7rem;
-    height: 3.5rem;
-  }
+.note button:hover {
+  background: #084298;
 }

@@ -1,20 +1,28 @@
-function MainContent() {
-  const now = new Date()
+import { useEffect, useState } from "react";
 
-  const jour = now.getDate()
-  const mois = now.getMonth() + 1
-  const annee = now.getFullYear()
-  const heure = now.getHours()
-  const minute = now.getMinutes()
-  const seconde = now.getSeconds()
+function MainContent() {
+  const [time, setTime] = useState(new Date());
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTime(new Date());
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <main>
+    <main className="main">
       <p>
-        Bonjour, on est le {jour}, {mois}, {annee} et il est {heure}:{minute}:{seconde}
+        Bonjour, on est le {time.getDate()}/
+        {time.getMonth() + 1}/
+        {time.getFullYear()} et il est{" "}
+        {time.getHours()}:
+        {time.getMinutes()}:
+        {time.getSeconds()}
       </p>
     </main>
-  )
+  );
 }
 
-export default MainContent
+export default MainContent;

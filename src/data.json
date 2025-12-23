@@ -1,20 +1,20 @@
 [
   {
     "id": 1,
-    "matiere": "Mathématiques",
-    "note": 16,
-    "etudiant": "Ali"
+    "titre": "React",
+    "note": 18,
+    "commentaire": "Très bonne maîtrise"
   },
   {
     "id": 2,
-    "matiere": "Informatique",
-    "note": 18,
-    "etudiant": "Sara"
+    "titre": "Java",
+    "note": 15,
+    "commentaire": "Bon niveau"
   },
   {
     "id": 3,
-    "matiere": "Physique",
-    "note": 14,
-    "etudiant": "Youssef"
+    "titre": "Web",
+    "note": 17,
+    "commentaire": "Très bien"
   }
 ]

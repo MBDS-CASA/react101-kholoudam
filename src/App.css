@@ -1,42 +1,129 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+/* ===== HEADER ===== */
+.header {
+  width: 100%;
+  background: linear-gradient(135deg, #0a3d62, #1e3799);
+  color: white;
+  padding: 20px 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Header top (logos) ===== */
+.header-top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-top img {
+  height: 55px;
+}
+
+/* ===== Titles ===== */
+.header h1 {
+  margin-top: 15px;
+  font-size: 28px;
+}
+
+.header h4 {
+  font-weight: normal;
+  margin-top: 5px;
+  opacity: 0.9;
+}
+
+/* ===== MENU ===== */
+.menu {
+  margin-top: 20px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.menu ul li {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Hover + animation */
+.menu ul li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* ===== MAIN ===== */
+main {
+  padding: 40px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+main p {
+  font-size: 18px;
+  margin-bottom: 30px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* ===== NOTE ===== */
+.note {
+  background-color: white;
+  width: 320px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.note:hover {
+  transform: scale(1.03);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #0a3d62;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .header {
+    padding: 20px;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .header-top {
+    justify-content: center;
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
-}
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  .note {
+    width: 90%;
+  }
 }

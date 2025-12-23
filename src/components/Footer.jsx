@@ -1,11 +1,11 @@
 function Footer() {
-  const annee = new Date().getFullYear()
+  const year = new Date().getFullYear();
 
   return (
     <footer className="footer">
-      © {annee} - ALLAM Kholoud, Tous droits réservés.
+      © {year} - ALLAM Kholoud, Tous droits réservés.
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

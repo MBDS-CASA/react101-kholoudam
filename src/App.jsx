@@ -1,25 +1,19 @@
-import Header from './components/Header'
-import MainContent from './components/MainContent'
-import Menu from './components/Menu'
-import Note from './components/Note'
-import Footer from './components/Footer'
-import './App.css'
+import Header from "./components/Header";
+import Menu from "./components/Menu";
+import MainContent from "./components/MainContent";
+import Footer from "./components/Footer";
+import Note from "./components/Note";
 
 function App() {
   return (
     <>
+      <Menu />
       <Header />
       <MainContent />
-      <Menu />
-      <Note
-        matiere="React JS"
-        etudiant="ALLAM Kholoud"
-        note={18}
-      />
-
+      <Note />
       <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

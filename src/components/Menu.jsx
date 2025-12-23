@@ -1,18 +1,15 @@
 function Menu() {
-  const handleClick = (item) => {
-    alert(item)
-  }
+  const items = ["Notes", "Etudiants", "Matières", "A propos"];
 
   return (
-    <nav>
-      <ul>
-        <li onClick={() => handleClick("Notes")}>Notes</li>
-        <li onClick={() => handleClick("Étudiants")}>Étudiants</li>
-        <li onClick={() => handleClick("Matières")}>Matières</li>
-        <li onClick={() => handleClick("À propos")}>À propos</li>
-      </ul>
+    <nav className="menu">
+      {items.map((item, index) => (
+        <button key={index} onClick={() => alert(item)}>
+          {item}
+        </button>
+      ))}
     </nav>
-  )
+  );
 }
 
-export default Menu
+export default Menu;
